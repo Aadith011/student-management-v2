@@ -1,8 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-import adminRoutes from './routes/adminRoutes'; //need to create a file
-import studentRoutes from './routes/studentRoutes'; //need to create a file
+import adminRoutes from './routes/adminRoutes'; 
+import studentRoutes from './routes/studentRoutes';
 import taskRoutes from './routes/taskRoutes'; //need to create a file
 
 const app = express();
