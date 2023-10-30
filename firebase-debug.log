@@ -1,0 +1,21 @@
+[debug] [2023-10-30T19:12:39.662Z] ----------------------------------------------------------------------
+[debug] [2023-10-30T19:12:39.666Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-10-30T19:12:39.667Z] CLI Version:   12.7.0
+[debug] [2023-10-30T19:12:39.667Z] Platform:      win32
+[debug] [2023-10-30T19:12:39.668Z] Node Version:  v18.17.1
+[debug] [2023-10-30T19:12:39.669Z] Time:          Tue Oct 31 2023 00:42:39 GMT+0530 (India Standard Time)
+[debug] [2023-10-30T19:12:39.670Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-30T19:12:39.686Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-30T19:12:39.687Z] > authorizing via signed-in user (zero.arcana01@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\OneDrive\Documents\Work\Mini_project\student-management-v2
+
