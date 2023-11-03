@@ -2,8 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cron from 'cron';
-import adminRoutes from '../routes/adminRoutes';
-import studentRoutes from '../routes/studentRoutes';
+import adminRoutes from '../routers/adminRoutes';
+import studentRoutes from '../routers/studentRoutes';
 
 const app = express();git 
 app.use(bodyParser.json());
