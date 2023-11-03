@@ -4,7 +4,7 @@ import { getTasks, markTaskAsDone } from '../controllers/studentController.js';
 
 const router = express.Router();
 
-router.get('/tasks', verifyStudentToken, getTasks);
-router.put('/done/:taskId', verifyStudentToken, markTaskAsDone);
+router.get('/student/tasks', verifyStudentToken, getTasks);
+router.put('/student/done/:taskId', verifyStudentToken, markTaskAsDone);
 
 export default router;

@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import cron from 'node-cron';
 import adminRoutes from './routers/adminRoutes.js';
 import studentRoutes from './routers/studentRoutes.js';
+import authRoutes from './routers/authRoutes.js';
 
 const app = express();
 app.use(bodyParser.json());
@@ -17,28 +18,8 @@ const port = process.env.PORT || 5000;
 
 app.use('/admin', adminRoutes);
 app.use('/student', studentRoutes);
+app.use('/auth', authRoutes);
 
-//cron
-/*
-const checkTaskStatus = async () => {
-  try {
-    const overdueTasks = await taskModel.find({
-      dueTime: { $lt: new Date() },
-      status: 'not done',
-    });
-
-    for (const task of overdueTasks) {
-      console.log(`Task for student ${task.studentName} is overdue.`);
-      task.status = 'overdue';
-      await task.save();
-    }
-  } catch (error) {
-    console.error('Error checking task status:', error);
-  }
-};
-
-cron.schedule('* * * * *', checkTaskStatus);
-*/
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
