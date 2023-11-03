@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
-import cron from 'cron';
+import cron from 'node-cron';
 import adminRoutes from '../routers/adminRoutes';
 import studentRoutes from '../routers/studentRoutes';
 
