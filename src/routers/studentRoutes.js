@@ -1,5 +1,5 @@
 import express from 'express';
-import { verifyStudentToken } from '../middleware/authMiddleware';
+import { verifyStudentToken } from '../services/authService';
 import { getTasks, markTaskAsDone } from '../controllers/studentController';
 
 const router = express.Router();
