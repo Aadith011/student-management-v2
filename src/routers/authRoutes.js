@@ -38,4 +38,5 @@ router.post('/student/login', async (req, res) => {
     }
   });
 
+export { adminSecretKey, studentSecretKey };
 export default router;

@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import Student from '../models/studentModel.js';
+import { adminSecretKey, studentSecretKey } from '../routers/authRoutes.js';
 
 export function verifyAdminToken(req, res, next) {
   const token = req.headers['authorization'];
