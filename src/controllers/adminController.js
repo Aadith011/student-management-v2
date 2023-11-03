@@ -1,5 +1,5 @@
-import Student from '../models/studentModel';
-import Task from '../models/taskModel';
+import Student from '../models/studentModel.js';
+import Task from '../models/taskModel.js';
 
 export const addStudent = async (req, res) => {
   const { name, email, password, department } = req.body;

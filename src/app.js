@@ -2,9 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cron from 'node-cron';
-import adminRoutes from '../routers/adminRoutes';
-import studentRoutes from '../routers/studentRoutes';
-import TaskModel from './models/task';
+import adminRoutes from './routers/adminRoutes.js';
+import studentRoutes from './routers/studentRoutes.js';
 
 const app = express();
 app.use(bodyParser.json());

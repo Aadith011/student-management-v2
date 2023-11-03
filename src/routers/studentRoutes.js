@@ -1,6 +1,6 @@
 import express from 'express';
-import { verifyStudentToken } from '../services/authService';
-import { getTasks, markTaskAsDone } from '../controllers/studentController';
+import { verifyStudentToken } from '../services/authService.js';
+import { getTasks, markTaskAsDone } from '../controllers/studentController.js';
 
 const router = express.Router();
 
