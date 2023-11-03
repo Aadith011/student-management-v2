@@ -19,9 +19,10 @@ app.use('/admin', adminRoutes);
 app.use('/student', studentRoutes);
 
 //cron
+/*
 const checkTaskStatus = async () => {
   try {
-    const overdueTasks = await TaskModel.find({
+    const overdueTasks = await taskModel.find({
       dueTime: { $lt: new Date() },
       status: 'not done',
     });
@@ -37,7 +38,7 @@ const checkTaskStatus = async () => {
 };
 
 cron.schedule('* * * * *', checkTaskStatus);
-
+*/
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
